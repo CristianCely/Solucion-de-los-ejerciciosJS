@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>algoritmo que calacula la velocidad de la luz</title>
+	<title>La velocidad de la luz</title>
+    <style type="text/css">
+        p{
+            background-color: chocolate
+        }
+        body{
+            background-color: coral
+        }
+        #enunciado{
+            width: 300px;
+            font-size: 20px;
+        }
+        #boton{
+            height: 50px;
+            width: 90px;
+        }
+    </style>
 </head>
 <body>
-<script >
-    
-
+<script >  
       function distanciaRecorrida(){
       	     var tiempoH= 19200;
              var velocidadKm=300000/1000;
@@ -17,8 +31,9 @@
       }
 </script>
 
-<p>la luz recorrio la distancia en el espacio durante 800 dias----->  <button onclick="distanciaRecorrida()" >analisar</button>
-</p>
+<div id="enunciado"><p>La luz recorrio la distancia en el espacio durante 800 dias : </p></div>
+    <button id="boton" onclick="distanciaRecorrida()" >Analisar</button>
+
 
 </body>
 </html>

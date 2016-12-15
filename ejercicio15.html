@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+   <title>Ejercicio 15</title>
+	<script>
+	function primo()
+	{
+		var valor=parseInt(document.getElementById("valor").value);
+		var NumeroPrimo=true;
+ 
+		for(i=1;i<valor;i++)
+		{
+			// If factor
+			if(valor/i == Math.round(valor/i) && i!=1 && i!=valor)
+			{
+				NumeroPrimo=false;
+				break;
+			};
+		};
+ 
+		if(NumeroPrimo)
+			document.getElementById("resultado").innerHTML="El numero "+valor+" es Primo";
+		else
+			document.getElementById("resultado").innerHTML="El numero "+valor+" NO es Primo";
+	}
+	</script>
+    <style type="text/css">
+        input{
+            background-color: aliceblue;
+            height: 40px;
+            width: 270px;
+            font-size: 20px;
+            
+        }
+        h4{font-size: 34px}
+        body{
+            background-color: azure
+        }
+        div{
+            font-size: 30px;
+        }
+        
+    
+    </style>
+</head>
+<body>
+ 
+<h4>Determinar si un valor es primo</h4>
+ 
+<input type="text" id="valor" value="" placeholder="Introduce un valor numerico">
+<input type="button" onclick="primo()" value="Primo">
+ <br>
+    <br>
+<div id="resultado"></div>
+ 
+</body>
+</html>

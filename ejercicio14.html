@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 14</title>
+       <style>
+           body{
+               background-color: cadetblue;
+               
+           }
+           input{
+               height: 20px;
+               width: 300px;
+           }
+    </style>  
+</head>
+<body>   
+
+<form name="formas">     
+    <input type="text" name="text" >
+    <input type="button" name="pulsar" value="Pulsar"> 
+</form>
+    <br>
+    <br>
+    <div id="muestreo"></div>
+   <script type="text/javascript"> 
+       
+       
+       var calcular = function(val1){
+           if (val1 != 0)
+               {
+            for (i = 1; i <= val1;i++)
+             {
+              var resulttabla = i ;
+              alert(resulttabla)           
+              }           
+               }
+           else
+               {
+                    var escribir = "es 0"
+                    escrito =  document.getElementById("muestreo")
+                  escrito.innerHTML = escribir
+                }
+           
+           
+       }
+     
+      window.document.formas.pulsar.onclick = function(){
+    var valor = window.document.formas.text.value;
+        calcular(valor)
+      }
+      
+    </script> 
+     
+
+</body>
+</html>
